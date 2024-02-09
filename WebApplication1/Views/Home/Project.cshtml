@@ -1,0 +1,19 @@
+﻿
+<main aria-labelledby="title">
+    <h1>Project Details</h1>
+    <hr />
+    <br>
+
+
+    <ul>
+        @foreach (var i in ViewBag.Array)
+        {
+
+            <li><h4>@i.course_name : </h4><h5><strong>@i.project_title</strong></h5>@i.description</li>
+            
+        }
+
+
+
+    </ul>
+</main>

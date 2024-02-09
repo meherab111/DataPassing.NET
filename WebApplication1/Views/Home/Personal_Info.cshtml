@@ -1,0 +1,84 @@
+﻿
+<main aria-labelledby="title">
+    <h1>Personal Information</h1>
+    <hr />
+    <br>
+
+    <table>
+
+        <tr style="height:50px">
+            <td style="width:10%;">Name</td>
+
+            <td>
+                : @foreach(var i in ViewBag.Array){@i.name; }
+
+            </td>
+
+        </tr>
+        <tr style="height:50px">
+            <td style="width:10%; ">
+                Father's Name
+            </td>
+
+            <td>
+                : @foreach (var i in ViewBag.Array) {@i.father_name; }
+
+            </td>
+        </tr>
+        <tr style="height:50px">
+            <td style="width:10%;">
+                Mother's Name
+            </td>
+
+            <td>
+                : @foreach (var i in ViewBag.Array)
+                {@i.mother_name;
+                 }
+
+            </td>
+        </tr>
+
+        <tr style="height:50px">
+            <td style="width:10%;">
+                Work
+            </td>
+
+            <td>
+                : @foreach (var i in ViewBag.Array)
+                {@i.work;
+                   }
+
+            </td>
+        </tr>
+        <tr style="height:50px">
+            <td style="width:10%;">
+                Email
+            </td>
+
+            <td>
+                : @foreach (var i in ViewBag.Array)
+                {@i.email;
+            }
+
+            </td>
+
+        </tr>
+        <tr style="height:50px">
+            <td style="width:10%;">
+                Address
+            </td>
+
+            <td>
+                : @foreach (var i in ViewBag.Array)
+                {@i.address;
+            }
+
+            </td>
+        </tr>
+
+
+
+    </table>
+
+
+</main>
